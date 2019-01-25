@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Front End</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body onload="run()">
+<h1>Create Your Zoo!</h1>
+
+<div id="user">Your Name:
+<input id="userName" type="text">
+</div>
+
+
+<div class="divs">
+    <h2>Add Animals</h2>
+    Animal Type:
+    <select class="btn btn-warning" id="animalType">
+        <option value="1">Tiger</option>
+        <option value="2">Bear</option>
+        <option value="3">Unicorn</option>
+        <option value="4">Giraffe</option>
+        <option value="5">Bee</option>
+    </select>
+        <br><br>
+     Animal Name:
+    <input id="name" type="text">
+        <br><br>
+    <button onclick="createAnimal()" class="btn btn-warning btn-lg">Create Your New Animal!</button>
+</div>
+
+
+<div class="divs">
+    <h2>Feed Animals</h2>
+    Select a Meal for the Animals:
+    <select id="meal" class="btn btn-info">
+        <option value="meat">meat</option>
+        <option value="fish">fish</option>
+        <option value="marshmallows">marshmallows</option>
+        <option value="leaves">leaves</option>
+        <option value="pollen">pollen</option>
+        <option value="sushi">sushi</option>
+        <option value="pizza">pizza</option>
+        <option value="burrito">burrito</option>
+        <option value="pasta">pasta</option>
+    </select>
+    <button onclick="feedAnimals()" class="btn btn-info">Feed Animals!</button>
+</div>
+
+
+<div class="divs">
+    <h2>Your Animals</h2>
+    <table id="listTable" border="2" cellpadding="10"></table>
+</div>
+
+<div class="divs">
+    <h2>Your Activity</h2>
+    <div id="feed"></div>
+</div>
+</body>
+</html>
